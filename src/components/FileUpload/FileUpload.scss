@@ -18,3 +18,14 @@
     line-height: 130%;
   }
 }
+
+@media only screen and (max-device-width: 640px) {
+
+  .file-upload-drop-zone .file-upload-title  {
+    font-size: 30px;
+  }
+
+  .file-upload-drop-zone .file-upload-sub-title {
+    font-size: 16px;
+  }
+}

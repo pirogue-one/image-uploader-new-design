@@ -1,12 +1,22 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   font-size: 16px;
 }
 
 @media only screen and (max-device-width: 640px) {
-  html, body, #root {
+
+  html,
+  body,
+  #root {
     font-size: 14px;
   }
+
+  ul.navbar {
+    display: none;
+  }
+
 }
 
 body {
@@ -18,8 +28,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a, button, p {
-  font-family:  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+a,
+button,
+p {
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 

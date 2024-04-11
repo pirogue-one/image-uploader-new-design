@@ -13,11 +13,11 @@ export default function Header({ setLang }) {
       <Link to="/">
         <Logo />
       </Link>
-      <Navbar />
       <MainMenu />
+      <Navbar />
       <div className='login-wrapper'>
-        <p className='login'><Translation path="login"/></p>
-      <LangSelector setLang={ setLang } />
+        <p className='login'><Translation path="login" /></p>
+        <LangSelector setLang={setLang} />
       </div>
       <LoginModal />
     </div>
