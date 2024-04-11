@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Bold'), local('Manrope-Bold'),
+      url('../public/fonts/Manrope-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Semibold'), local('Manrope-Semibold'),
+      url('../public/fonts/Manrope-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+      url('../public/fonts/Manrope-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Light'), local('Manrope-Light'),
+      url('../public/fonts/Manrope-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Thin'), local('Manrope-Thin'),
+      url('../public/fonts/Manrope-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+      url('../public/fonts/Manrope-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
+      url('../public/fonts/Manrope-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+html, body, form, fieldset, table, tr, td, img, header {
+  font-family: 'Manrope', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+a, p, input, button, select, textarea, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*.App-header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+}*/
+
+.App-body {
+  padding: 0 5%;
+  flex-grow: 1;
+  /* overflow: hidden; */
+  display: flex;
+  /* height: 100%; */
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+  /* FireFox scroll styles */
+  scrollbar-color: #aaa rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+/* Chrome scroll styles */
+*::-webkit-scrollbar {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+*::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 8px;
+  background-color: #aaa;
+}
