@@ -41,5 +41,12 @@
    "paragraph-privacy-policy": "By using any of the services provided by NoExif.org, you are bound by the contents of this policy page. \n\n What we do with your data: \n\n User data stored in our database is strictly are used to provide our services. The data collected is for NoExif.org and we will not share with any third party any information about our users. User stored information: \n\n User information (email, profile, user content and newsletter subscription) User data is stored permanently until the user requests deletion of this data. \n\n Cookies: \n\n We use cookies to improve the user's browsing experience and our services. No cookies will be used to track your browsing session for any type of analytics or advertising program.",
    "password": "Password",
    "login-btn": "Continue",
-   "sign-up-link": "Create  an account!"
+   "sign-up-link": "Create  an account!",
+   "title-remove-exif": "Remove EXIF data from images",
+   "paragraph-remove-exif": "Need to remove EXIF information from a PNG or JPG image? With this tool, you can easily remove EXIF metadata from any image on the web, without having to install any software.",
+   "title-how-it-works": "How to clear photo metadata",
+  "paragraph-how-it-works-1": "Open our website in your browser",
+  "paragraph-how-it-works-2": "Click inside the drag-and-drop file area to upload a photo file or drag and drop your photo.",
+  "paragraph-how-it-works-3": "Click the Clear Metadata button to delete your photo's metadata.",
+  "paragraph-how-it-works-4": "Click Save, then on the Upload button to upload your updated photo."
 }

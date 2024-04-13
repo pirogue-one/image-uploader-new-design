@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { TranslationProvider } from 'i18nano'
 import { DEFAULT_LANGUAGE, translations } from './i18n'
 import { CookiesProvider, useCookies } from 'react-cookie'
-import FaqPage from './components/FaqPage/FaqPage'
+import FaqPage from './components/FaqPage/FaqPage';
+import DonatePage from './components/DonatePage/DonatePage';
+import AboutPage from './components/AboutPage/AboutPage';
 
 function App() {
   const [cookies] = useCookies()
@@ -29,6 +31,8 @@ function App() {
                 <Route path="/uploaded/:imageId" element={<FileView owner={true}/>} />
                 <Route index element={<FileUpload />} />
                 <Route path="/faq" element={<FaqPage />}/>
+                <Route path="/donate" element={<DonatePage />}/>
+                <Route path="/about" element={<AboutPage />}/>
               </Routes>
             </div>
           </div>

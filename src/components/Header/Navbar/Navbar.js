@@ -7,22 +7,22 @@ export default function Logo() {
         <div className='group-nav'>
             <ul className='navbar'>
                 <Link to="/faq"><li className='navbar-item'>FAQ</li></Link>
-                <Link to="/"><li className='navbar-item'><Translation path="nav-donate" /></li></Link>
-                <Link to="/"><li className='navbar-item'><Translation path="nav-explanation" /></li></Link>
+                <Link to="/donate"><li className='navbar-item'><Translation path="nav-donate" /></li></Link>
+                <Link to="/about"><li className='navbar-item'><Translation path="nav-explanation" /></li></Link>
 
             </ul>
 
-            <div class="hamburger-menu navbar-mob">
+            <div className="hamburger-menu navbar-mob">
 
                 <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
+                <label className="menu__btn" htmlFor="menu__toggle">
                     <span></span>
                 </label>
 
-                <ul class="menu__box">
+                <ul className="menu__box">
                     <Link to="/faq"><li className='navbar-item'>FAQ</li></Link>
-                    <Link to="/"><li className='navbar-item'><Translation path="nav-donate" /></li></Link>
-                    <Link to="/"><li className='navbar-item'><Translation path="nav-explanation" /></li></Link>
+                    <Link to="/donate"><li className='navbar-item'><Translation path="nav-donate" /></li></Link>
+                    <Link to="/about"><li className='navbar-item'><Translation path="nav-explanation" /></li></Link>
                 </ul>
             </div>
         </div>

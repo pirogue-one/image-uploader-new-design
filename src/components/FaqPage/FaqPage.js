@@ -1,5 +1,5 @@
 import { Translation } from 'i18nano';
-import './FaqPage.scss'
+import './FaqPage.scss';
 
 export default function FaqPage() {
     return (

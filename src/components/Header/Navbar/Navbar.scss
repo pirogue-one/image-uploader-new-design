@@ -87,7 +87,7 @@
         position: fixed;
         top: 70px;
         left: -100%;
-        width: 100%;
+        width: 60%;
         height: 100%;
         margin: 0;
         padding: 80px 20px;
@@ -107,9 +107,5 @@
         font-weight: 600;
         text-decoration: none;
         transition-duration: .25s;
-    }
-
-    .menu__item:hover {
-        background-color: #FFFFFF;
     }
 }
