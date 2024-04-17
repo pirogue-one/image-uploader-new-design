@@ -1,7 +1,7 @@
 import { Fragment, useRef, useState } from 'react'
 import './SelectButton.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import  fileUploadImage  from './upload_image.png'
+import { faFileImage } from '@fortawesome/free-solid-svg-icons'
 import { faUpload } from '@fortawesome/free-solid-svg-icons'
 
 export default function SelectButton({ mode, progress, onSelect, onUploadImages }) {
@@ -36,8 +36,6 @@ export default function SelectButton({ mode, progress, onSelect, onUploadImages 
     setIsHovered(false)
   }
 
-  console.log(fileUploadImage)
-
   return (
     <Fragment>
       <div className="select-file-button-wrapper">
@@ -48,10 +46,10 @@ export default function SelectButton({ mode, progress, onSelect, onUploadImages 
           onMouseLeave={mouseLeaveHandler}
         >
           <div className={'select-file-button-circle-border' + getButtonClass()} />
-          {/* <div className="select-file-button-circle-border-hover" /> */}
+          <div className="select-file-button-circle-border-hover" />
         </button>
         <div className={'icon' + getButtonClass()} onClick={clickHandler} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-          {mode === 'select' && <img className="select-file-button-icon" alt="Upload" src={fileUploadImage} />}
+          {mode === 'select' && <FontAwesomeIcon icon={faFileImage} className="select-file-button-icon" />}
           {((mode === 'upload') || (mode === 'progress' && progress === 0)) && <FontAwesomeIcon icon={faUpload} className="select-file-button-icon" />}
           {(mode === 'progress' && progress > 0) && <p className='select-file-button-progress'>{progress}</p>}
         </div>
