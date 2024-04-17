@@ -52,13 +52,14 @@
     }
 
     .menu__btn {
-        position: fixed;
-        top: 39px;
-        left: 20px;
+        position: relative;
+        top: 0px;
+        left: 0px;    
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 4;
+        transform: translate(0);
     }
 
     .menu__btn>span,
@@ -84,13 +85,13 @@
 
     .menu__box {
         display: flex;
-        position: fixed;
-        top: 70px;
+        position: absolute;
+        top: 0;
         left: -100%;
         width: 60%;
         height: 100%;
         margin: 0;
-        padding: 80px 20px;
+        padding: 80px 20px 10px 32px;
         list-style: none;
         background-color: #FFFFFF;
         transition-duration: .25s;
