@@ -1,12 +1,12 @@
 .select-file-button-wrapper {
-    padding-top: 6rem;
+    padding-top: 2rem;
     position: relative;
 
     .select-file-button {
         position: relative;
         width: 10rem;
         height: 10rem;
-        background-color: transparent;
+        background-color: rgba(89, 96, 160, 1);
         cursor: pointer;
         border-radius: 100%;
         border: 0px;
@@ -23,33 +23,33 @@
         }
     }
 
-    // .select-file-button.animate {
-    //     animation: rotating 1s linear infinite;
-    // }
+    .select-file-button.animate {
+        animation: rotating 1s linear infinite;
+    }
 
-    // .select-file-button-circle-border {
-    //     position: absolute;
-    //     width: 10rem;
-    //     height: 10rem;
-    //     left: 0;
-    //     top: 0;
-    //     background-color: rgba(89, 96, 160, 1);
-    //     border-radius: 100%;
-    // }
+    .select-file-button-circle-border-hover {
+        position: absolute;
+        width: 11rem;
+        height: 11rem;
+        left: -0.5rem;
+        top: -1.5rem;
+        background-color: rgba(89, 96, 160, 1);
+        border-radius: 100%;
+    }
 
-    // .select-file-button-circle-border.hovered {
-    //     background-color: rgb(108, 116, 194);
-    // }
+    .select-file-button-circle-border.hovered {
+        background-color: rgb(108, 116, 194);
+    }
 
-    // .select-file-button-circle-border-hover {
-    //     position: absolute;
-    //     width: 11rem;
-    //     height: 11rem;
-    //     left: -0.5rem;
-    //     top: -1.5rem;
-    //     background-color: white;
-    //     border-radius: 100%;
-    // }
+    .select-file-button-circle-border-hover {
+        position: absolute;
+        width: 11rem;
+        height: 11rem;
+        left: -0.5rem;
+        top: -1.5rem;
+        background-color: white;
+        border-radius: 100%;
+    }
 
     .icon {
         position: absolute;

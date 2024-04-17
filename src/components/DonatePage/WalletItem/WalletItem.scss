@@ -14,17 +14,19 @@
 
     P::-moz-selection { /* Code for Firefox */
         color: #FFFFFF;
-        background: #333333;
+        background: #5960A0;
       }
       
     P::selection {
         color: #FFFFFF;
-        background: #333333;
+        background: #5960A0;
       }
 
-    div {
-        border: 1px solid #000000;
+      .walletWrapper {
+        border: 1px solid #5960A0;
+        background-color: transparent;
         color: #000000;
+        font-family: "Lexend", sans-serif;
         border-radius: 12px;
         padding: 10px 15px;
         appearance: none;
@@ -41,6 +43,35 @@
             margin: 0;
         }
     }
+}
+
+.qrWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.qr {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+
+.imagesWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 @media(max-width: 500px) {

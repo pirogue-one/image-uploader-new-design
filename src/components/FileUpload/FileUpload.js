@@ -8,7 +8,8 @@ import FormData from 'form-data'
 import axios from 'axios'
 import { BACKEND_ENDPOINT, BACKEND_METHODS } from '../../consts'
 import { Translation } from 'i18nano'
-import './FileUpload.scss'
+import './FileUpload.scss';
+import WalletBtn from '../WalletBtn/WalletBtn';
 
 export default function FileUpload() {
   const [loadedFiles, setLoadedFiles] = useState([])
@@ -183,6 +184,7 @@ export default function FileUpload() {
         }
         {!uploaded && <SelectButton mode={ uploadMode } progress={ uploadProgress } onSelect={ onSelect } onUploadImages={ onUploadImages }/>}
       </div>
+      <WalletBtn />
     </Fragment>
   )
 }
